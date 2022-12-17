@@ -5,6 +5,7 @@
 ## Подготовить датасет
 1. Установить [датасет LJSpeech,версия 1.1](https://keithito.com/LJ-Speech-Dataset/).
 2. Переименовать по необходимости датамет в LJSpeech-1.1 и поместить в директорию `data`.
+3. Распаковать в ту же папку `alignments.zip`
 4. Поместить [waveqlow](https://drive.google.com/file/d/1WsibBTsuRg_SF2Z6L6NFRTT-NjEy1oTx/view?usp=sharing) в `model/waveglow/pretrained_model`, переименовать - `waveglow_256channels.pt`;
 5. Запустить  `python3 common/preprocess.py`.
 
@@ -19,7 +20,8 @@
 В директории model_new должен быть файл checkpoint_X.pth.tar. Он формируется каждые несколько шагов, где несколько - параметр 
 save_step в common/hparams.py Был подобран под скорость обучения на колабе.
 
-## Installation Guide: в описанном выше hparams.py также указаны все параметры, на которых запускалась модель. Эксперимент
+## Installation Guide:  
+В описанном выше hparams.py также указаны все параметры, на которых запускалась модель. Эксперимент
 проводился в колабе на GPU, но все переносы на cuda удалены из кода. Для работы в колабе по состоянию на 17-12-2022 
 достаточно отдельно установить последнюю строку в requirements.txt   
 
