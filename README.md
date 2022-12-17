@@ -5,7 +5,7 @@
 ## Подготовить датасет
 1. Установить [датасет LJSpeech,версия 1.1](https://keithito.com/LJ-Speech-Dataset/).
 2. Переименовать по необходимости датамет в LJSpeech-1.1 и поместить в директорию `data`.
-3. Распаковать в ту же папку `alignments.zip`
+3. Распаковать в ту же папку `alignments/alignments.zip`
 4. Поместить [waveqlow](https://drive.google.com/file/d/1WsibBTsuRg_SF2Z6L6NFRTT-NjEy1oTx/view?usp=sharing) в `model/waveglow/pretrained_model`, переименовать - `waveglow_256channels.pt`;
 5. Запустить  `python3 common/preprocess.py`.
 
